@@ -1,0 +1,879 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container {
+		max-width: 880px;
+	}
+
+	.wrapper {
+		font-size: 16px;
+	}
+
+	.first-screen {
+		&__inner {
+			height: 675px;
+		}
+
+		&__title {
+			font-size: 44px;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+
+	.title {
+		font-size: 42px;
+
+		&--mb-long {
+			margin-bottom: 60px;
+		}
+	}
+
+	.about {
+		&__bg {
+			left: -15px;
+			top: 85px;
+		}
+
+		&__img {
+			width: 240px;
+			height: 420px;
+		}
+
+		&__card-wrapper {
+			&:last-child {
+				margin-top: 30px;
+			}
+		}
+
+		&__card {
+			padding: 20px;
+
+			&-title {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.ecosystem {
+		position: relative;
+
+		&__first-img {
+			position: absolute;
+		}
+
+		&__second-img {
+			height: 600px;
+			top: 30px;
+		}
+
+		&__third-img {
+			height: 500px;
+		}
+
+		&__card {
+			padding: 60px 30px;
+			width: 90%;
+			margin: 0 auto;
+
+			&-bg {
+				position: absolute;
+				z-index: 1;
+				top: 26px;
+				right: -14px;
+			}
+		}
+
+		&__card-title-wrapper {
+			width: 40%;
+			z-index: 2;
+		}
+
+		&__card-title {
+			padding: 20px;
+			font-size: 26px;
+			line-height: 40px;
+		}
+
+		&__card-title-connection {
+			margin-left: 130px;
+		}
+
+		&__card-subtitle {
+			font-size: 24px;
+			line-height: 40px;
+			padding: 20px;
+			width: 266px;
+			margin-left: 20px;
+		}
+
+		&__card-text-wrapper {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	.stats {
+		&__bg-img {
+			top: 222px;
+			right: -15px;
+		}
+	}
+
+	.stat-card {
+		width: 215px;
+		height: 140px;
+
+		&:nth-child(2) {
+			margin: 0 14px;
+		}
+
+		&:nth-child(4) {
+			margin-top: 14px;
+		}
+
+		&:nth-child(5) {
+			margin: 14px 14px 0 14px;
+		}
+
+		&:nth-child(3) {
+			width: 422px;
+			height: 294px;
+			padding: 34px 16px;
+
+			& .stat-card__title {
+				font-size: 90px;
+				line-height: 100px;
+			}
+
+			& .stat-card__text {
+				font-size: 40px;
+				line-height: 49px;
+			}
+		}
+
+		&__title {
+			font-size: 52px;
+			line-height: 60px;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+
+	.culture {
+		&__bg-img {
+			top: 168px;
+		}
+
+		&__inner {
+			margin-top: 40px;
+		}
+
+		&__cards {
+			display: none;
+		}
+	}
+
+	.s-map {
+		&__bg-img {
+			position: absolute;
+			top: 56px;
+		}
+
+		&__tiger-img {
+			right: 30px;
+			width: 216px;
+			height: 290px;
+		}
+
+		&__decor-img {
+			position: absolute;
+			width: 350px;
+		}
+	}
+
+	.footer {
+		&__inner {
+			margin-top: 35px;
+		}
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper {
+		font-size: 15px;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+
+	.title {
+		font-size: 32px;
+
+		&--mr {
+			margin-right: 0;
+		}
+
+		&--mb-short {
+			margin-bottom: 20px;
+		}
+
+		&--mb-medium {
+			margin-bottom: 30px;
+		}
+
+		&--mb-long {
+			margin-bottom: 40px;
+		}
+	}
+
+	.first-screen {
+		&__inner {
+			padding: 50px 30px;
+			height: 520px;
+		}
+
+		&__title {
+			margin-top: 38px;
+			font-size: 38px;
+		}
+
+		&__subtitle {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&__btn-wrapper {
+			width: 240px;
+			padding: 12px;
+		}
+
+		&__btn {
+			font-size: 16px;
+		}
+	}
+
+	.about {
+		&__bg {
+			left: -15px;
+			top: 170px;
+		}
+
+		&__img {
+			width: 175px;
+			height: 300px;
+			top: -20px;
+		}
+
+		&__card-wrapper {
+			&:last-child {
+				margin-top: 20px;
+			}
+		}
+
+		&__card {
+			padding: 20px;
+			width: 50%;
+
+			&:first-child {
+				width: 53%;
+			}
+
+			&-title {
+				font-size: 18px;
+			}
+
+			&-text {
+				font-size: 14px;
+				line-height: 18px;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.ecosystem {
+		&__first-img {
+			top: -190px;
+		}
+
+		&__second-img {
+			top: -30px;
+		}
+
+		&__third-img {
+			height: 500px;
+		}
+
+		&__card {
+			padding: 60px 30px 30px;
+			flex-direction: column;
+			gap: 20px;
+
+			&-bg {
+				display: none;
+			}
+		}
+
+		&__card-title-wrapper {
+			width: 100%;
+			z-index: 2;
+		}
+
+		&__card-title {
+			padding: 20px;
+			font-size: 26px;
+			line-height: 40px;
+			text-align: center;
+		}
+
+		&__card-title-connection {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&__card-subtitle {
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		&__card-text-wrapper {
+			width: 100%;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	.stats {
+		&__bg-img {
+			top: 177px;
+			right: -45px;
+		}
+	}
+
+	.stat-card {
+		width: 150px;
+		height: 110px;
+		padding: 15px;
+
+		&:nth-child(3) {
+			width: 252px;
+			height: 234px;
+
+			& .stat-card__title {
+				font-size: 50px;
+				line-height: 60px;
+			}
+
+			& .stat-card__text {
+				font-size: 30px;
+				line-height: 39px;
+			}
+		}
+
+		&__title {
+			font-size: 32px;
+			line-height: 40px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	.mission {
+		&__bg-img {
+			position: absolute;
+			top: 265px;
+			z-index: 1;
+		}
+
+		&__inner {
+			gap: 30px;
+			margin-top: 30px;
+			margin-left: 0;
+		}
+
+		&__card {
+			width: 100%;
+			height: 270px;
+		}
+	}
+
+	.culture {
+		&__bg-img {
+			top: 120px;
+		}
+
+		&__inner {
+			margin-top: 15px;
+		}
+	}
+
+	.s-map {
+		&__bg-img {
+			top: 46px;
+		}
+
+		&__tiger-img {
+			right: 10px;
+			width: 150px;
+			bottom: 40px;
+			height: 200px;
+		}
+
+		&__decor-img {
+			width: 220px;
+		}
+	}
+
+	.map {
+		&-city {
+			&__name {
+				font-size: 8px;
+			}
+
+			&--almaty {
+				left: 67%;
+				top: 78%;
+			}
+
+			&--taraz {
+				left: 57%;
+				top: 80%;
+			}
+
+			&--shymkent {
+				left: 50%;
+				top: 88%;
+			}
+
+			&--aktau {
+				left: 7%;
+				top: 71%;
+			}
+
+			&--atyray {
+				left: 10%;
+				top: 49%;
+			}
+
+			&--astana {
+				left: 52%;
+				top: 25%;
+			}
+
+			&--semei {
+				left: 78%;
+				top: 32%;
+			}
+
+			&--turkestan {
+				left: 46%;
+				top: 60%;
+
+				&::before {
+					top: 120%;
+				}
+			}
+
+			&--konaev {
+				left: 74%;
+				top: 72%;
+			}
+
+			&--ust-kamenogorsk {
+				left: 80%;
+				top: 14%;
+
+				&::before {
+					top: 140%;
+					left: 300%;
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__inner {
+			margin-top: 20px;
+		}
+
+		&__btn {
+			margin: 21px auto 0;
+		}
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper {
+		font-size: 14px;
+	}
+
+	.about {
+		&__bg {
+			display: none;
+		}
+
+		&__card-wrapper {
+			&:last-child {
+				margin-top: 20px;
+			}
+		}
+
+		&__card {
+			padding: 20px;
+			width: 50%;
+
+			&:first-child {
+				width: 73%;
+			}
+
+			&-title {
+				font-size: 18px;
+			}
+
+			&-text {
+				font-size: 14px;
+				line-height: 18px;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.ecosystem {
+		&__card-title {
+			padding: 10px;
+		}
+
+		&__card-subtitle {
+			padding: 10px;
+		}
+	}
+
+	.stats {
+		&__bg-img {
+			display: none;
+		}
+
+		&__cards {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+	}
+
+	.stat-card {
+		width: 49% !important;
+		border-radius: 30px !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		height: auto !important;
+		padding: 20px !important;
+
+		&__title {
+			font-size: 30px !important;
+			line-height: 40px !important;
+		}
+
+		&:nth-child(3) {
+			width: 100% !important;
+			margin-top: 14px;
+		}
+
+		&__text {
+			font-size: 18px !important;
+			line-height: 22px !important;
+		}
+	}
+
+	.mission {
+		&__inner {
+			gap: 30px;
+			margin-top: 30px;
+			margin-left: 0;
+		}
+
+		&__card {
+			width: 100%;
+			height: auto;
+		}
+
+		&__card-title {
+			font-size: 30px;
+			line-height: 39px;
+			padding: 15px 0;
+		}
+
+		&__card-text {
+			padding: 20px 30px;
+		}
+	}
+
+	.culture {
+		& .title {
+			font-size: 26px;
+		}
+
+		&__bg-img {
+			top: 110px;
+		}
+	}
+
+	.s-map {
+		&__bg-img {
+			top: 46px;
+		}
+
+		&__tiger-img {
+			display: none;
+		}
+
+		&__decor-img {
+			width: 180px;
+		}
+	}
+
+	.map {
+		width: 95%;
+		margin-top: 30px;
+	}
+
+	.footer {
+		& .title {
+			font-size: 26px;
+		}
+
+		&__inner {
+			margin-top: 15px;
+		}
+
+		&__btn {
+			margin: 15px auto 0;
+		}
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper {
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+
+	.logo {
+		width: 35%;
+	}
+
+	.first-screen {
+		&__inner {
+			padding: 30px 15px;
+			height: 300px;
+		}
+
+		&__title {
+			margin-top: 20px;
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		&__subtitle {
+			font-size: 14px;
+			line-height: 18px;
+
+			& br {
+				display: none;
+			}
+		}
+
+		&__btn-wrapper {
+			width: 200px;
+			padding: 5px;
+			margin-top: 15px;
+		}
+
+		&__btn {
+			font-size: 14px;
+		}
+	}
+
+	.about {
+		&__img {
+			width: 115px;
+			height: 192px;
+		}
+
+		&__card {
+			width: 100% !important;
+		}
+	}
+
+	.ecosystem {
+
+		&__first-img,
+		&__second-img,
+		&__third-img {
+			display: none;
+		}
+
+		&__card {
+			width: 100%;
+		}
+
+		&__card-text-wrapper {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	.culture {
+		& .title{
+			font-size: 24px;
+		}
+		&__bg-img {
+			display: none;
+		}
+
+		&__inner {
+			margin-top: 20px;
+		}
+
+		&__cards-img {
+			display: none;
+		}
+
+		&__cards {
+			display: block;
+		}
+
+		&__card {
+			border-radius: 0px 50px 0px 0px;
+			background: #FFF;
+			box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
+			padding: 9px 18px 8px 19px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 91px;
+
+			&+& {
+				margin-top: 15px;
+			}
+		}
+
+		&__card-numb {
+			color:  $color_secondary;
+			width: 23%;
+			font-size: 35px;
+			line-height: 55px;
+			font-weight: 600;
+			border-right: 3px solid $color_secondary;
+		}
+		&__card-text{
+			width: 70%;
+		}
+	}
+
+	.s-map {
+		padding-top: 40px;
+		&__bg-img {
+			top: 70px;
+		}
+
+		&__decor-img {
+			width: 150px;
+		}
+	}
+	.map {
+		&-city {
+			&__name {
+				font-size: 7px;
+			}
+
+			&--almaty {
+				left: 62%;
+				top: 78%;
+			}
+
+			&--taraz {
+				left: 52%;
+				top: 80%;
+			}
+
+			&--shymkent {
+				left: 45%;
+				top: 88%;
+			}
+
+			&--aktau {
+				left: 3%;
+				top: 71%;
+			}
+
+			&--atyray {
+				left: 7%;
+				top: 44%;
+			}
+
+			&--astana {
+				left: 47%;
+				top: 25%;
+			}
+
+			&--semei {
+				left: 70%;
+				top: 32%;
+			}
+
+			&--turkestan {
+				left: 43%;
+				top: 52%;
+
+				&::before {
+					top: 120%;
+				}
+			}
+
+			&--konaev {
+				left: 70%;
+				top: 72%;
+			}
+
+			&--ust-kamenogorsk {
+				left: 73%;
+				top: 2%;
+
+				&::before {
+					top: 140%;
+					left: 300%;
+				}
+			}
+		}
+	}
+	.footer {
+		& .title {
+			font-size: 20px;
+			line-height: 26px;
+		}
+
+		&__inner {
+			margin-top: 15px;
+		}
+
+		&__btn {
+			margin: 5px auto 0;
+		}
+	}
+}

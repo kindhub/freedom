@@ -1,0 +1,176 @@
+extends ./pug/layout
+
+block content
+	<!-- START FIRST-SCREEN -->
+	.section.first-screen 
+		.container 
+			.first-screen__inner
+				.logo 
+					img(src="https://hhcdn.ru/ichameleon/308529.svg")
+				.first-screen__title Доступная связь <br> для каждого
+				.first-screen__subtitle Мы ставим себе стратегической целью <br> реализовать данное право для каждого <br> гражданина Республики Казахстан.
+				.first-screen__btn-wrapper.vacancy-btn
+					.first-screen__btn Смотреть все вакансии
+	<!-- END FIRST-SCREEN -->
+
+	<!-- START ABOUT -->
+	.section.section--medium-pt.about
+		.about__bg
+			img(src="https://hhcdn.ru/ichameleon/307308.svg")
+		.about__img 
+			img(src="https://hhcdn.ru/ichameleon/307307.png")
+		.container 
+			.title.title--mb-long О Компании
+			.about__card-wrapper 
+				.about__card 
+					.about__card-title Freedom Telecom
+					.about__card-text 
+						p Cовременная телекоммуникационная компания, развивающая на рынке Республики Казахстан широкополосный доступ к сети интернет в каждый дом, новую технологичную 5G мобильную связь, открытый доступ WI-FI в крупных городах.
+			.about__card-wrapper 
+				.about__card 
+					.about__card-title Компания имеет 10 филиалов:
+					.about__card-text 
+						p в Астане, Туркестане, Шымкенте, Усть-Каменогорске, Атырау, Семее, Актау, Алмате, Таразе и Конаеве. Список городов присутствия постоянно расширяется. Мы работаем в тесном сотрудничестве с мировыми производителями оборудования и программного обеспечения.
+	<!-- END ABOUT -->
+
+	<!-- START ECOSYSTEM -->
+	.section.section--short-pt.ecosystem
+		.ecosystem__first-img
+			img(src="https://hhcdn.ru/ichameleon/307315.svg")
+		.ecosystem__second-img
+			img(src="https://hhcdn.ru/ichameleon/307316.svg")
+		.ecosystem__third-img
+			img(src="https://hhcdn.ru/ichameleon/307314.svg")
+		.container 
+			.title.title--right.title--mb-short Экосистема
+			.ecosystem__card
+				.ecosystem__card-bg 
+					img(src="https://hhcdn.ru/ichameleon/308530.svg")
+				.ecosystem__card-title-wrapper 
+					.ecosystem__card-title Freedom Holding
+					.ecosystem__card-title-connection 
+						img(src="https://hhcdn.ru/ichameleon/307312.svg")
+					.ecosystem__card-subtitle Freedom Telecom
+				.ecosystem__card-text-wrapper 
+					p Freedom Telecom активно развивается в экосистеме международной инвестиционной группы компаний Freedom Holding Corp., которая является одной из крупнейших частных компаний Казахстана. Нашими клиентами являются физические лица, крупный, средний, малый бизнес и государственные учреждения Республики Казахстан.
+	<!-- END ECOSYSTEM -->
+
+	<!-- START STATS -->
+	.section.stats
+		.stats__bg-img  
+			img(src="https://hhcdn.ru/ichameleon/307317.svg")
+		.container 
+			.title.title--mb-medium Мы в цифрах
+			.stats__inner 
+				.stats__cards
+					+stat-card("<span class='countup' data-value='10'>0</span>", "", "филиалов в РК")
+					+stat-card("<span class='countup' data-value='30'>0</span>", "+", "услуг")
+					+stat-card("<span class='countup' data-value='1500'>0</span>", "+", "клиентов")
+					+stat-card("<span class='countup' data-value='400'>0</span>", "+", "технических специалистов в штате")
+					+stat-card("<span class='countup' data-value='900'>0</span>", "+", "сотрудников")
+	<!-- END STATS -->
+
+	<!-- START MISSION -->
+	.section.mission 
+		.mission__bg-img 
+			img(src="https://hhcdn.ru/ichameleon/307320.svg")
+		.container
+			.title Миссия и Цели
+			.mission__inner 
+				.mission__card 
+					.mission__card-title 
+						p Миссия
+					.mission__card-text 
+						p Мы создаем нового высокотехнологичного оператора связи в Казахстане, который расширяет свои границы и возможности для абонентов в Центральной Азии. Мы предоставляем максимальный цифровой опыт для наших клиентов. Мы видим ценность создания и развития телеком оператора, как единого центра для всех участников экосистемы Freedom.
+				.mission__card 
+					.mission__card-title 
+						p Цели
+					.mission__card-text 
+						p Создать нового национального высокотехнологического оператора связи с максимально эффективным покрытием территории Казахстана, и обратить современные новейшие технологии в отрасли на пользу наших клиентов.
+	<!-- END MISSION -->
+
+	<!-- START CULTURE -->
+	.section.culture
+		.culture__bg-img 
+			img(src="https://hhcdn.ru/ichameleon/307321.svg") 
+		.container 
+			.title.title--right.title--mr Корпоративная культура
+			.culture__inner
+				.culture__cards-img 
+					img(src="https://hhcdn.ru/ichameleon/307322.svg")
+				.culture__cards
+					.culture__card
+						.culture__card-numb 01
+						.culture__card-text Финансовая помощь на знаковые события
+					.culture__card
+						.culture__card-numb 02
+						.culture__card-text Дополнительные 7 дней для отдыха
+					.culture__card
+						.culture__card-numb 03
+						.culture__card-text Корпоративная страховка здоровья
+					.culture__card
+						.culture__card-numb 04
+						.culture__card-text Эволюция скилов на постоянной основе
+					.culture__card
+						.culture__card-numb 05
+						.culture__card-text Обучение за счет компании
+					.culture__card
+						.culture__card-numb 06
+						.culture__card-text Корпоративные ивенты
+					.culture__card
+						.culture__card-numb 07
+						.culture__card-text Командный мультиспорт
+					.culture__card
+						.culture__card-numb 08
+						.culture__card-text Прокачка языковых навыков
+					.culture__card
+						.culture__card-numb 09
+						.culture__card-text Экосистемное путешествие по Фридом
+					.culture__card
+						.culture__card-numb 10
+						.culture__card-text Множество перспектив для карьерного развития
+					.culture__card
+						.culture__card-numb 11
+						.culture__card-text Теплая атмосфера среди коллег
+					.culture__card
+						.culture__card-numb 12
+						.culture__card-text Кастомный набор плюшек
+					.culture__card
+						.culture__card-numb 13
+						.culture__card-text Минимум бюрократии, максимум эффективности
+					.culture__card
+						.culture__card-numb 14
+						.culture__card-text Инновативный подход компании
+					.culture__card
+						.culture__card-numb 15
+						.culture__card-text Смысловой мерч
+					.culture__card
+						.culture__card-numb 16
+						.culture__card-text Welcome-box
+					.culture__card
+						.culture__card-numb 17
+						.culture__card-text Забота об экологии, обществе и будущем
+	<!-- END CULTURE -->
+
+	<!-- START MAP -->
+		.section.s-map
+			.s-map__bg-img 
+				img(src="https://hhcdn.ru/ichameleon/307330.svg")
+			.s-map__decor-img 
+				img(src="https://hhcdn.ru/ichameleon/307333.png")
+			.s-map__tiger-img
+				img(src="https://hhcdn.ru/ichameleon/307332.png")
+			.container
+				.title.title--right.title--mr Филиалы
+				include ./map
+	<!-- END MAP -->
+	<!-- START FOOTER -->
+	.section.footer
+		.footer__bg-img 
+			img(src="https://hhcdn.ru/ichameleon/307336.svg")
+		.container 
+			.footer__inner 
+				.title.title--centered Присоединяйтесь к нам
+				.footer__btn.vacancy-btn 
+					img(src="https://hhcdn.ru/ichameleon/307337.svg")
+	<!-- END FOOTER -->
